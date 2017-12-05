@@ -164,9 +164,9 @@
       }
     })
 
-    export function clearLocalotifications () {
+    export function clearLocalNotification () {
       return AsyncStorage.removeItem(NOTIFICATION_KEY)
-        .then(Notification.cancelAllScheduledNotificationsAsync)
+        .then(Notifications.cancelAllScheduledNotificationsAsync)
     }
 
     function createNotification () {
@@ -179,7 +179,7 @@
         android: {
           sound: true,
           priority: 'high',
-          stciky: false,
+          sticky: false,
           vibrate: true,
         }
       }

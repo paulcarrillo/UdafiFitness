@@ -4,7 +4,7 @@
     getMetricMetaInfo,
     timeToString,
     getDailyReminderValue,
-    clearLocalotifications,
+    clearLocalNotification,
     setLocalNotification
   } from '../utils/helpers'
   import UdaciSlider from './UdaciSlider'
@@ -86,7 +86,7 @@
 
       submitEntry({ key, entry })
 
-      clearLocalotifications()
+      clearLocalNotification()
         .then(setLocalNotification)
     }
 
